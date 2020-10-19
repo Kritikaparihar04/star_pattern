@@ -1,0 +1,36 @@
+Code : Reverse Number Pattern
+-------------------------------------------------------------
+Print the following pattern for the given N number of rows.
+Pattern for N = 4
+1
+21
+321
+4321
+
+Input format :
+Integer N (Total no. of rows)
+
+Output format :
+Pattern in N lines
+
+---------------------------------------------------------------
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+int N;
+    cin>>N;
+    for(int i=1;i<=N;i++)
+    {
+        for(int j=i;j>0;j--)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
