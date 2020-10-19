@@ -1,0 +1,36 @@
+Start Pattern
+--------------------------------------
+Print the following pattern
+Pattern for N = 4
+
+The dots represent spaces.
+
+Input Format :
+N (Total no. of rows)
+Output Format :
+Pattern in N lines
+
+--------------------------------------
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i, j, k, N;
+    cin>>N;
+    for(i=1;i<=N;i++)
+    {
+        for(j=i;j<N;j++)
+        {
+        	cout << " ";
+        }
+        for(k=1;k<(i*2);k++)
+        {
+            cout << "*";
+        }
+        cout <<endl;
+    }
+    return 0;
+}
