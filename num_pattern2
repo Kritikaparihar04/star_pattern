@@ -1,0 +1,45 @@
+Number Pattern 2
+-------------------------
+Print the following pattern
+Pattern for N = 4
+       1
+      23
+     345
+    4567
+Input Format :
+N (Total no. of rows)
+Output Format :
+Pattern in N lines
+---------------------------
+
+
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+  int n,i=1,j=1;
+    cin>>n;
+   while(i<=n)
+   {
+
+       while(j<=i)
+       {  for(int m=0;m<n-i;m++)
+       {
+           cout<<" ";
+       }
+
+           for(int k=0;k<j;k++)
+           {
+               cout<<j+k;
+           }
+           j++;
+       }
+       i++;
+       cout<<endl;
+   }
+
+   return 0;
+}
